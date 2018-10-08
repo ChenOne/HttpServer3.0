@@ -1,0 +1,49 @@
+
+1.PIP的使用
+    作用： 管理python的标准第三方库中第三软件包
+    安装： sudo apt-get install python3-pip
+    常用命令:
+       ① 安装软件: pip3 install package名
+            eg: pip3 install ssh
+
+       ② 查看当前python软件包清单: pip3 list
+       ③ 搜索某个人名字的python包: pip3 search ssh  (以ssh为例)
+       ④ 查看软件包信息: pip3 show [package名]
+
+       ⑤ 升级软件包: sudo pip3 install --upgrade package名
+               eg 升级pip: sudo pip3 install --upgrade pip
+
+       ⑥ 卸载软件包: sudo pip3 uninstall [package名]
+       ⑦ 导出软件包环境: pip3 freeze > requirements.txt
+                    会有一个requirements.txt环境文档
+
+----   ⑧ 根据文档自动安装: pip3 install -r requirement
+
+
+2.PDB 调试方法
+    import pdb
+       功能: 断电设置, 单步执行, 查看代码, 查看函数, 追踪变量等
+
+       命令: 
+            b   break        设置断点
+            c   continue     继续执行
+            n   next         单步执行
+            s   step         单步执行,可以进入函数内部
+            l   list         查看某个代码段
+            pp               查看某个变量值
+            help             查看帮助 
+            exit             退出pdb调试
+
+         在.py中进入pdb调试模式: pdb.set_trace()  
+         直接进入pdb调试模式运行: python3 -m pdb 文件名 
+
+
+
+
+
+
+
+
+
+
+
